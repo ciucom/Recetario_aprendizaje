@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang='es'>
+	<head>
+		<title>Página principal</title>
+		<meta charset='utf-8'>
+	</head>
+	<body>
+		<h1>Principal - Recetario de Bebidas</h1>
+			{% for elemento in lista %}
+			<ul>
+				<li><strong>{{elemento.titulo}}</strong></li>
+				<li>{{elemento.ingredientes}}</li>
+				<li>{{elemento.preparacion}}</li>
+				<li><IMG SRC = {{elemento.imagen}}></li>
+				<li>{{elemento.tiempo_registro}}</li>
+				<li>{{elemento.usuario}}</li>
+			</ul>
+			{% endfor %}
+	</body>
+</html>
